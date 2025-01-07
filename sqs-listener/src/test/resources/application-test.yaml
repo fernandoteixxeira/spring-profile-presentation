@@ -1,0 +1,3 @@
+spring.application.name: sqs-listener
+
+cloud.aws.sqs.endpoint: https://sqs.us-east-1.amazonaws.com/915302240115/sharing-spring-profiles

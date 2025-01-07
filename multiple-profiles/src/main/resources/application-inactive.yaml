@@ -1,0 +1,5 @@
+person:
+  active: false
+active:
+  company: false
+  person: false

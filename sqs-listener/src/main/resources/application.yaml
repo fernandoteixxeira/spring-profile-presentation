@@ -1,0 +1,9 @@
+spring.application.name: sqs-listener
+
+cloud.aws:
+  region:
+    enum: US_EAST_1
+    static: us-east-1
+  sqs:
+    enabled: true
+    endpoint: ${SQS_ENDPOINT}

@@ -1,0 +1,5 @@
+person:
+  company: ACME Corporation
+  nationality: Mexico
+active:
+  company: true

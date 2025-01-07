@@ -1,0 +1,32 @@
+version: "3.8"
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      args:
+        AWS_REGION: us-east-1
+    env_file:
+      - docker-compose.env
+    ports:
+      - "8080:8080"
+    networks:
+      - local-network
+    depends_on:
+      - sqs
+
+  sqs:
+    image: localstack/localstack
+    container_name: sqs
+    hostname: sqs
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=sqs
+      - AWS_DEFAULT_REGION=us-east-1
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge

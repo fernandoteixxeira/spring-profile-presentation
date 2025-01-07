@@ -1,0 +1,7 @@
+spring:
+  application.name: multiple-profiles
+  profiles.active: generic
+
+person:
+  active: true
+  name: Papa-léguas

@@ -1,0 +1,4 @@
+cloud.aws:
+  credentials:
+    access-key: XXXXXX
+    secret-key: XXXXXX
